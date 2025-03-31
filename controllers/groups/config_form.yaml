@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: profixs.valiants::lang.system.labels.group
+
+# Model Form Field configuration
+form: $/profixs/valiants/models/group/fields.yaml
+
+# Model Class name
+modelClass: ProFixS\Valiants\Models\Group
+
+# Default redirect location
+defaultRedirect: profixs/valiants/groups
+
+# Create page
+create:
+    title: profixs.valiants::lang.system.labels.create_group
+    redirect: profixs/valiants/groups/update/:id
+    redirectClose: profixs/valiants/groups
+
+# Update page
+update:
+    title: profixs.valiants::lang.system.labels.edit_group
+    redirect: profixs/valiants/groups
+    redirectClose: profixs/valiants/groups
+
+# Preview page
+preview:
+    title: profixs.valiants::lang.system.labels.preview_group

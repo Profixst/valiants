@@ -1,0 +1,13 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+  id:
+    label: ID
+    searchable: true
+    sortable: false
+  name:
+    label: profixs.valiants::lang.group.name
+    sortable: false
+    searchable: true

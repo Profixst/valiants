@@ -1,0 +1,9 @@
+groups:
+  label: profixs.valiants::lang.groups.title
+  view:
+    list: $/profixs/valiants/models/group/relation_columns.yaml
+    toolbarButtons: add|remove
+  manage:
+    list: $/profixs/valiants/models/group/relation_columns.yaml
+  pivot:
+    form: $/profixs/valiants/models/group/relation_fields.yaml

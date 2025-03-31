@@ -1,0 +1,13 @@
+fields:
+    id:
+        label: ID
+        disabled: true
+    name:
+        label: profixs.valiants::lang.group.name
+        readOnly: true
+    pivot[order_number]:
+        label: profixs.valiants::lang.group.order_number
+        type: number
+    pivot[priority]:
+        label: profixs.valiants::lang.group.priority
+        type: number

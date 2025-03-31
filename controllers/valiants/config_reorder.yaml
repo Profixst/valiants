@@ -1,0 +1,5 @@
+title: profixs.valiants::lang.system.labels.reorder_valiants
+nameFrom: last_name
+modelClass: ProFixS\Valiants\Models\Valiant
+toolbar:
+    buttons: reorder_toolbar

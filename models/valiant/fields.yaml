@@ -1,0 +1,91 @@
+# ==================================
+#  Form Field Definitions
+# ==================================
+
+fields:
+  last_name:
+    label: profixs.valiants::lang.valiant.last_name
+    type: text
+    span: storm
+    cssClass: col-md-4
+  first_name:
+    label: profixs.valiants::lang.valiant.first_name
+    type: text
+    span: storm
+    cssClass: col-md-4
+  middle_name:
+    label: profixs.valiants::lang.valiant.middle_name
+    type: text
+    span: storm
+    cssClass: col-md-4
+  slug:
+    label: profixs.valiants::lang.valiant.slug
+    type: text
+    comment: profixs.valiants::lang.valiant.slug_comment
+  groups:
+    label: profixs.valiants::lang.valiant.groups
+    context: update
+    type: partial
+    path: $/profixs/valiants/controllers/valiants/_groups.php
+
+tabs:
+  fields:
+    position:
+      label: profixs.valiants::lang.valiant.position
+      type: text
+      tab: profixs.valiants::lang.valiant.tabs.about
+    bio:
+      label: profixs.valiants::lang.valiant.bio
+      type: richeditor
+      tab: profixs.valiants::lang.valiant.tabs.about
+    bio_timeline:
+      label: profixs.valiants::lang.valiant.bio_timeline.label
+      type: repeater
+      tab: profixs.valiants::lang.valiant.tabs.about
+      maxItems: 50
+      prompt: profixs.valiants::lang.valiant.bio_timeline.prompt
+      form:
+        fields:
+          period:
+            label: profixs.valiants::lang.valiant.bio_timeline.form_fields.period
+            type: text
+          description:
+            label: profixs.valiants::lang.valiant.bio_timeline.form_fields.description
+            type: textarea
+    links:
+      label: profixs.valiants::lang.valiant.links.field_title
+      type: repeater
+      tab: profixs.valiants::lang.valiant.tabs.links
+      prompt: profixs.valiants::lang.valiant.links.prompt
+      form:
+        fields:
+          title:
+            label: profixs.valiants::lang.valiant.links.inner_title
+            span: left
+            type: text
+          url:
+            label: profixs.valiants::lang.valiant.links.inner_url
+            span: right
+            type: text
+          description:
+            label: profixs.valiants::lang.valiant.links.inner_description
+            size: ''
+            span: left
+            type: textarea
+          new_window:
+            label: profixs.valiants::lang.valiant.links.inner_new_window
+            span: auto
+            type: switch
+
+secondaryTabs:
+  fields:
+    preview_button:
+      context: ['update']
+      type: partial
+    published:
+      label: profixs.valiants::lang.valiant.published
+      type: checkbox
+      default: true
+    avatar:
+      label: profixs.valiants::lang.valiant.avatar
+      type: fileupload

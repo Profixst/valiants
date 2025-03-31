@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: profixs.valiants::lang.system.labels.valiant
+
+# Model Form Field configuration
+form: $/profixs/valiants/models/valiant/fields.yaml
+
+# Model Class name
+modelClass: ProFixS\Valiants\Models\Valiant
+
+# Default redirect location
+defaultRedirect: profixs/valiants/valiants
+
+# Create page
+create:
+    title: profixs.valiants::lang.system.labels.create_valiant
+    redirect: profixs/valiants/valiants/update/:id
+    redirectClose: profixs/valiants/valiants
+
+# Update page
+update:
+    title: profixs.valiants::lang.system.labels.edit_valiant
+    redirect: profixs/valiants/valiants
+    redirectClose: profixs/valiants/valiants
+
+# Preview page
+preview:
+    title: profixs.valiants::lang.system.labels.preview_valiant

@@ -1,0 +1,132 @@
+{
+  "query":
+  {
+      "bool":
+       {
+        "must":
+        [
+        {{#selected_search_text}}
+        {
+          "dis_max" : {
+            "queries" : [
+                
+                {
+                  "simple_query_string": {
+                      "fields": [
+                        "first_name.standart","last_name.standart","middle_name.standart","position.standart","bio.standart"
+                      ],
+                      "query": "{{selected_search_text}}*",
+                      "default_operator": "and"
+                    }
+                },
+                
+                {
+                  "simple_query_string": {
+                      "fields": [
+                        "first_name","last_name","middle_name","position","bio"
+                      ],
+                      "query": "{{selected_search_text}}",
+                      "default_operator": "and"
+                    }
+                },
+                
+                {
+                    "multi_match": {
+                      "query": "{{selected_search_text}}",
+                      "type" : "cross_fields",
+                      "fields": [
+                        "first_name","last_name","middle_name","position","bio","first_name.standart","last_name.standart","middle_name.standart","position.standart","bio.standart"
+                      ],
+                      "operator": "and"
+                    }
+                }
+                
+            ]
+          }
+        },
+        {{/selected_search_text}}
+        {"exists": {"field": "_id"}}
+        ],
+        
+        "filter":
+        [
+        
+                {{#selected_site_id}}
+                {
+                    "term":
+                    {
+                        "site_id": {{selected_site_id}}
+                    }
+                },
+                {{/selected_site_id}}
+                {"exists": {"field": "_id"}}
+        ]
+        
+       }
+  },
+        "highlight":
+        {
+            "fields" : {
+                "first_name" :  {"number_of_fragments": 0, "matched_fields":["first_name","first_name.standart"], "type": "fvh"},
+                "middle_name" :  {"number_of_fragments": 0, "matched_fields":["middle_name","middle_name.standart"], "type": "fvh"},
+                "last_name" :  {"number_of_fragments": 0, "matched_fields":["last_name","last_name.standart"], "type": "fvh"},
+                "position" :  {"number_of_fragments": 0, "matched_fields":["position","position.standart"], "type": "fvh"},
+                "bio" :  {"number_of_fragments": 1, "fragment_size": 250, "matched_fields":["bio","bio.standart"], "type": "fvh"}
+            }
+        },
+        
+        "suggest": {
+            "text": "{{selected_search_text}}",
+            "simple_phrase": {
+            "phrase": {
+                "field": "bio.trigram",
+                "size": 1,
+                "gram_size": 3,
+                "direct_generator": [ 
+                {
+                    "field": "bio.trigram",
+                    "suggest_mode": "missing"
+                },
+                {
+                    "field" : "bio.reverse",
+                    "suggest_mode" : "missing",
+                    "pre_filter" : "reverse",
+                    "post_filter" : "reverse"
+                }
+                ],
+                "highlight": {
+                "pre_tag": "<em>",
+                "post_tag": "</em>"
+                },
+                "collate": {
+                    "query": {
+                    "source" : {
+                    "multi_match" : {
+                        "query" : "{{suggestion}}",
+                        "type": "phrase",
+                        "minimum_should_match": "3<90% 7<5",
+                        "slop": 5,
+                        "fields" : ["bio", "first_name", "middle_name", "last_name", "position"]
+                    }
+                    }
+                },
+                    "prune": true
+                }
+            }
+            }
+        },
+        
+        "track_total_hits": true,
+        {{#selected_size}}
+        "size" : "{{selected_size}}"
+        {{#selected_from}}
+        ,
+        "from": "{{selected_from}}",
+        {{/selected_from}}
+        {{/selected_size}}
+        
+        "sort":
+        [
+            {"_score" :  {"order": "desc"}}
+        ]
+}

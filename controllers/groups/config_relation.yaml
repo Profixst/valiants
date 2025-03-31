@@ -1,0 +1,12 @@
+valiants:
+  label: label
+  view:
+    list: $/profixs/valiants/models/valiant/columns.yaml
+  manage:
+    list: $/profixs/valiants/models/valiant/columns.yaml
+  # pivot:
+  #   form: $/profixs/valiants/models/group/fields.yaml
+    # fields:
+    #   order_number:
+    #     label: order
+    #     type: text

@@ -1,0 +1,23 @@
+{
+    "name": "profixs/valiants",
+    "description": "ProFixS Valiants Plugin",
+    "type": "october-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mukola",
+            "email": "newdarkstudiot@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+          "type": "git",
+          "url": "git@github.com:Profixst/Core.git",
+          "reference": "refs/tags"
+        }
+    ],
+    "require": {
+        "profixs/core": "*"
+    }
+}
