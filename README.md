@@ -1,1 +1,1 @@
-# valiants
+# valiants plugin for themes memorial
