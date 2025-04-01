@@ -7,7 +7,7 @@
 		<div class="col-md-2 col-sm-4 col-xs-6">
 			   <div class="team-item">
 			       <div class="photo" style="background-image: url({{ valianat.avatar.path }});"></div>
-			       <a href="{{ ('/profile/' ~ valianat.slug)|url }}" class="name">
+			       <a href="{{ ('/solder/' ~ valianat.slug)|url }}" class="name">
 			           <span>{{valianat.fullName}}</span>
 			       </a>
 			       <div class="employment">

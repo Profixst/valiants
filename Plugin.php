@@ -50,7 +50,7 @@ class Plugin extends PluginBase
         return [
             'ProFixS\Valiants\Components\valiantsList' => 'valiantsList',
             'ProFixS\Valiants\Components\valiantsListByGroups' => 'valiantsListByGroups',
-            'ProFixS\Valiants\Components\Profile' => 'profile',
+            'ProFixS\Valiants\Components\Solder' => 'solder',
             'ProFixS\Valiants\Components\Valiants' => 'valiants',
             'ProFixS\Valiants\Components\Randomvaliants' => 'randomvaliants',
             'ProFixS\Valiants\Components\SelectedValiant' => 'selectedValiant'

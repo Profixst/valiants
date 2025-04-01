@@ -64,13 +64,13 @@ return [
         'priority' => 'Priority',
     ],
     'component' => [
-        'profile' => [
-            'name' => 'Profile block',
-            'description' => 'Block that show profile info',
+        'solder' => [
+            'name' => 'Solder block',
+            'description' => 'Block that show solder info',
         ],
         'valiant_list' => [
             'name' => 'valiants list',
-            'description' => 'Block that render list of profiles',
+            'description' => 'Block that render list of solders',
             'group_type' => [
                 'description' => 'Type of group',
                 'title' => 'Group type',

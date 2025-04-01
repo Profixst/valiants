@@ -13,7 +13,7 @@
     "repositories": [
         {
           "type": "git",
-          "url": "git@github.com:Profixst/Core.git",
+          "url": "git@github.com:Profixst/core.git",
           "reference": "refs/tags"
         }
     ],
