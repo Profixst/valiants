@@ -1,1 +1,63 @@
-v1.0.1: First version of Valiants
+v1.0.1:
+    - 'First version of valiants'
+    - create_people_table.php
+    - create_groups_table.php
+v1.0.2:
+    - 'add order number ans description'
+    - add_order_number_to_group_valiant_table.php
+    - add_description_to_groups_table.php
+v1.0.3:
+    - 'Adding links repeater field'
+    - add_links_jsonable_field.php
+v1.0.4:
+    - 'Adding sortable to groups'
+    - add_sortable_to_groups.php
+v1.0.5:
+    - 'add slug to valiants'
+    - add_slug_to_valiant.php
+v1.0.6:
+    - 'set slug where not exist'
+    - insert_slug_to_valiant.php
+v1.0.7:
+    - 'add nullable to valiants bio'
+    - change_valiants_bio_to_nullable.php
+v1.0.8:
+    - 'add new column for sort valiants'
+    - add_sort_order_column.php
+v1.0.9:
+    - 'add sort numbers to valiants'
+    - add_sort_order_number_to_valiant.php
+v1.0.10:
+    - 'add sort numbers to groups'
+    - add_sort_order_number_to_group.php
+v1.0.11:
+    - 'add priority to group_valiant table'
+    - add_priority_to_group_valiant_table.php
+v1.0.12:
+    - 'Adding bio timeline repeater field'
+    - add_bio_timeline_jsonable_field.php
+v1.0.13:
+    - 'Adding Fields Column for valiants'
+    - add_fields_column_to_valiants.php
+v1.1.0:
+    - 'Added compact-container bodyClass and secondaryTabs'
+    - 'The location of the fields has been changed for improve user-friendly inreface'
+    - 'Added Published field and installed true value for all valiants records created before'
+    - 'Added scope isPublished and applied him for all components'
+    - 'Post field is not required more'
+    - 'Added Published column and remove Bio column'
+    - add_published_column.php
+v1.2.0:
+    - ' Added content faker'
+v1.3.0:
+    - ' Remove pageLinks from component. Remove setUrl from models and old menu functionality.'
+v1.3.1:
+    - ' Add preview button'
+v1.3.2:
+    - ' Search by last_name for relationFinder, change from first_name'
+v1.3.3:
+    - ' Fix profile preview'
+v1.3.4:
+    - ' Fix preview button context for correctly deleting field in event backend.form.extendFields'
+v1.3.5:
+    - ' Add elasticsearch mustache scripts'
