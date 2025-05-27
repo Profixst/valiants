@@ -1,7 +1,5 @@
 v1.0.1:
     - 'First version of valiants'
-    - create_people_table.php
-    - create_groups_table.php
 v1.0.7:
     - 'add nullable to valiants bio'
     - change_valiants_bio_to_nullable.php
