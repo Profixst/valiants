@@ -2,16 +2,12 @@ v1.0.1:
     - 'First version of valiants'
 v1.0.7:
     - 'add nullable to valiants bio'
-    - change_valiants_bio_to_nullable.php
 v1.0.9:
     - 'add sort numbers to valiants'
-    - add_sort_order_number_to_valiant.php
 v1.0.10:
     - 'add sort numbers to groups'
-    - add_sort_order_number_to_group.php
 v1.0.13:
     - 'Adding Fields Column for valiants'
-    - add_fields_column_to_valiants.php
 v1.1.0:
     - 'Added compact-container bodyClass and secondaryTabs'
     - 'The location of the fields has been changed for improve user-friendly inreface'
