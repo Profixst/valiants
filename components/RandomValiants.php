@@ -78,7 +78,7 @@ class RandomValiants extends ComponentBase
      */
     protected function loadValiants()
     {
-        return $this->applyFilters(valiant::isPublished())
+        return $this->applyFilters(Valiant::isPublished())
             ->inRandomOrder()
             ->limit($this->property('count') ?? 1)
             ->get();
