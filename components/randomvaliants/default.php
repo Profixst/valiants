@@ -1,4 +1,4 @@
-{% for Valiant in randomValiants.valiants %}
+{% for valiant in randomValiants.valiants %}
 
     <a href="{{ valiant.url|url  }}" class="page" style="background-image: url({{ valiant.avatar.path }});">
         <div class="filter"></div>
