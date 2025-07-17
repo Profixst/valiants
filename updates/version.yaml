@@ -30,4 +30,4 @@ v1.3.4:
 v1.3.5:
     - ' Add elasticsearch mustache scripts'
 v1.4.0:
-    - 'Add solder preview'
+    - 'Add profile preview'
