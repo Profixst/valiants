@@ -5,7 +5,7 @@ use Cms\Classes\ComponentBase;
 use ProFixS\MultiLanguage\Classes\LocaleSwitcher;
 use ProFixS\Valiants\Models\Valiant;
 
-class Solder extends ComponentBase
+class Profile extends ComponentBase
 {
     public function componentDetails()
     {
