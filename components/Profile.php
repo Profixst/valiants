@@ -10,8 +10,8 @@ class Solder extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name' => 'profixs.valiants::lang.component.solder.name',
-            'description' => 'profixs.valiants::lang.component.solder.description'
+            'name' => 'profixs.valiants::lang.component.profile.name',
+            'description' => 'profixs.valiants::lang.component.profile.description'
         ];
     }
 
