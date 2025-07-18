@@ -64,7 +64,7 @@ return [
         'priority' => 'Пріоритет',
     ],
     'component' => [
-        'solder' => [
+        'profile' => [
             'name' => 'Блок профілю Героїв',
             'description' => 'Відображення блоку профілю Героїв',
         ],
