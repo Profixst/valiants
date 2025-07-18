@@ -64,7 +64,7 @@ return [
         'priority' => 'Priority',
     ],
     'component' => [
-        'solder' => [
+        'profile' => [
             'name' => 'Solder block',
             'description' => 'Block that show solder info',
         ],
