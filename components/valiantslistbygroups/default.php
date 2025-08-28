@@ -8,7 +8,7 @@
 			   <div class="team-item">
 			       <div class="photo" style="background-image: url({{ valiant.avatar.path }});"></div>
 			       <a href="{{ ('/solder/' ~ valiant.slug)|url }}" class="name">
-			           <span>{{valiant.fullName}}</span>
+			           <span>{{ valiant.fullName }}</span>
 			       </a>
 			       <div class="employment">
 			           {{ valiant.position }}
