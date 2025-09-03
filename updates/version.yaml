@@ -24,10 +24,10 @@ v1.3.1:
 v1.3.2:
     - ' Search by last_name for relationFinder, change from first_name'
 v1.3.3:
-    - ' Fix profile preview'
+    - ' Fix solder preview'
 v1.3.4:
     - ' Fix preview button context for correctly deleting field in event backend.form.extendFields'
 v1.3.5:
     - ' Add elasticsearch mustache scripts'
 v1.4.0:
-    - 'Add profile preview'
+    - 'Add solder preview'

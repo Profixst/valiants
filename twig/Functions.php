@@ -8,7 +8,7 @@ use ProFixS\Valiants\Models\Valiant;
 class Functions
 {
     /**
-     * getPerson
+     * getValiant
      */
     public static function getValiant(int $id)
     {

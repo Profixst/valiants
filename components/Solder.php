@@ -5,13 +5,13 @@ use Cms\Classes\ComponentBase;
 use ProFixS\MultiLanguage\Classes\LocaleSwitcher;
 use ProFixS\Valiants\Models\Valiant;
 
-class Profile extends ComponentBase
+class Solder extends ComponentBase
 {
     public function componentDetails()
     {
         return [
-            'name' => 'profixs.valiants::lang.component.profile.name',
-            'description' => 'profixs.valiants::lang.component.profile.description'
+            'name' => 'profixs.valiants::lang.component.solder.name',
+            'description' => 'profixs.valiants::lang.component.solder.description'
         ];
     }
 

@@ -50,9 +50,9 @@ class Plugin extends PluginBase
         return [
             'ProFixS\Valiants\Components\ValiantsList' => 'valiantsList',
             'ProFixS\Valiants\Components\ValiantsListByGroups' => 'valiantsListByGroups',
-            'ProFixS\Valiants\Components\Profile' => 'profile',
+            'ProFixS\Valiants\Components\Solder' => 'solder',
             'ProFixS\Valiants\Components\Valiants' => 'valiants',
-            'ProFixS\Valiants\Components\RandomValiants' => 'randomvaliants',
+            'ProFixS\Valiants\Components\RandomValiants' => 'randomValiants',
             'ProFixS\Valiants\Components\SelectedValiant' => 'selectedValiant'
         ];
     }
