@@ -4,29 +4,30 @@ use Schema;
 use October\Rain\Database\Schema\Blueprint;
 use October\Rain\Database\Updates\Migration;
 
-/**
- * CreateGroupsTable Migration
- *
- * @link https://docs.octobercms.com/3.x/extend/database/structure.html
- */
-return new class extends Migration
+/class CreateGroupsTable extends Migration
 {
-    /**
-     * up builds the migration
-     */
     public function up()
     {
         Schema::create('profixs_valiants_groups', function(Blueprint $table) {
-            $table->id();
+            $table->engine = 'InnoDB';
+            $table->increments('id');
+            $table->string('name');
             $table->timestamps();
+        });
+
+        Schema::create('profixs_group_valiant', function(Blueprint $table) {
+            $table->engine = 'InnoDB';
+            $table->increments('id');
+            $table->integer('group_id');
+            $table->integer('valiant_id');
+            $table->integer('person_id');
         });
     }
 
-    /**
-     * down reverses the migration
-     */
     public function down()
     {
         Schema::dropIfExists('profixs_valiants_groups');
+        Schema::dropIfExists('profixs_group_valiant');
     }
-};
+}
+
