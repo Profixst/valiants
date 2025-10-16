@@ -1,29 +1,29 @@
 1.0.1:
     - 'First version of valiants'
-    - create_people_table.php
-    - create_groups_table.php
+#    - create_people_table.php
+#    - create_groups_table.php
 1.0.2:
     - 'add order number ans description'
-    - add_order_number_to_group_valiant_table.php
-    - add_description_to_groups_table.php
+#   - add_order_number_to_group_valiant_table.php
+#    - add_description_to_groups_table.php
 1.0.3:
     - 'Adding links repeater field'
-    - add_links_jsonable_field.php
+#    - add_links_jsonable_field.php
 1.0.4:
     - 'Adding sortable to groups'
-    - add_sortable_to_groups.php
+#    - add_sortable_to_groups.php
 1.0.5:
     - 'add slug to valiants'
-    - add_slug_to_valiant.php
+#    - add_slug_to_valiant.php
 1.0.6:
     - 'set slug where not exist'
-    - insert_slug_to_valiant.php
+   - insert_slug_to_valiant.php
 1.0.7:
     - 'add nullable to valiants bio'
     - change_valiants_bio_to_nullable.php
 1.0.8:
     - 'add new column for sort valiants'
-    - add_sort_order_column.php
+#    - add_sort_order_column.php
 1.0.9:
     - 'add sort numbers to valiants'
     - add_sort_order_number_to_valiant.php
@@ -32,10 +32,10 @@
     - add_sort_order_number_to_group.php
 1.0.11:
     - 'add priority to group_valiant table'
-    - add_priority_to_group_valiant_table.php
+#    - add_priority_to_group_valiant_table.php
 1.0.12:
     - 'Adding bio timeline repeater field'
-    - add_bio_timeline_jsonable_field.php
+#    - add_bio_timeline_jsonable_field.php
 1.0.13:
     - 'Adding Fields Column for valiants'
     - add_fields_column_to_valiants.php
@@ -46,7 +46,7 @@
     - 'Added scope isPublished and applied him for all components'
     - 'Post field is not required more'
     - 'Added Published column and remove Bio column'
-    - add_published_column.php
+ #   - add_published_column.php
 1.2.0:
     - ' Added content faker'
 1.3.0:
