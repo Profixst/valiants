@@ -17,7 +17,7 @@
 #    - add_slug_to_valiant.php
 1.0.6:
     - 'set slug where not exist'
-   - insert_slug_to_valiant.php
+    - insert_slug_to_valiant.php
 1.0.7:
     - 'add nullable to valiants bio'
     - change_valiants_bio_to_nullable.php
