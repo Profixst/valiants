@@ -37,7 +37,7 @@ class SelectedValiant extends ComponentBase
      */
     public function getValiantOptions()
     {
-        return valiant::isPublished()->limit(500)->get()
+        return Valiant::isPublished()->limit(500)->get()
             ->mapWithKeys(function ($item) {
             return [$item->id => $item->fullName()];
         })->toArray();
@@ -60,4 +60,5 @@ class SelectedValiant extends ComponentBase
             return Valiant::find($valiant);
         }
     }
+
 }
