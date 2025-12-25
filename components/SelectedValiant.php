@@ -60,5 +60,5 @@ class SelectedValiant extends ComponentBase
             return Valiant::find($valiant);
         }
     }
-
 }
+
