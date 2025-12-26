@@ -16,7 +16,7 @@ class Functions
     }
 
     /**
-     * personLink
+     * valiantLink
      */
     public static function valiantLink($data, $template = 'valiant')
     {
@@ -36,3 +36,4 @@ class Functions
         return PagesHelper::url($routePageId, ['slug' => $slug]);
     }
 }
+
