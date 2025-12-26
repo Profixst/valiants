@@ -20,7 +20,6 @@ use October\Rain\Database\Updates\Migration;
             $table->increments('id');
             $table->integer('group_id');
             $table->integer('valiant_id');
-            $table->integer('person_id');
         });
     }
 
