@@ -15,10 +15,10 @@ class SeedGroups extends Seeder
 			'name' => 'Загиблі Герої'
 		]);
 		Group::create([
-			'name' => 'Керівництво'
+			'name' => 'Герої'
 		]);
 		Group::create([
-		    'name' => 'Виконавчий комітет'
+		    'name' => 'Меморіал Пам\'яті'
         ]);
 	}
 }
