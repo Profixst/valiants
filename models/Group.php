@@ -1,7 +1,7 @@
 <?php namespace ProFixS\Valiants\Models;
 
 use Model;
-use ProFixS\Valiants\Models\valiant;
+use ProFixS\Valiants\Models\Valiant;
 use Illuminate\Support\Facades\DB;
 
 class Group extends Model
@@ -53,3 +53,4 @@ class Group extends Model
         $this->sort_order = self::withoutGlobalScopes()->max('sort_order') + 1;
     }
 }
+
